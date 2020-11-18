@@ -1,0 +1,183 @@
+@import "header"
+
+.productSite
+    margin-top: 65px
+.productSiteInside
+    display: flex
+  
+.productSiteLeft
+    width: 25%
+    margin-right: 56px
+    summary 
+        width: inherit
+        height: 30px
+        line-height: 30px
+        +fontSite($colorFontGray, 14px, 700)
+        text-transform: uppercase
+        border-left: 4px solid $colorPink
+        border-bottom: 1.5px solid #f0f0f0
+        margin-bottom: 20px
+        padding-left: 20px
+        box-sizing: border-box
+        &::-webkit-details-marker 
+            display: none
+        &::after 
+            content: '\25BC'
+            color: $colorFontGray
+            float: right
+            font-size: 12px
+    details[open] summary
+        color: $colorPink
+        &::after
+            content: '\25B2'
+            color: $colorPink    
+.categoryMenu
+    +flexSite(column, flex-start, flex-start)
+    li:last-child
+        margin-bottom: 30px
+    &__textMenu
+        display: block
+        padding-left: 24px
+        line-height: 33px
+        transition: color 1s
+        &:hover
+            color: $colorPinkLight        
+.productSiteRight
+    width: 75%    
+.productSiteRightMenu
+    display: flex
+    width: 100%
+    margin-bottom: 41px
+.productSiteRightMenuThird
+    width: 33%
+.productSiteRightMenuTrending
+    margin-top: 25px
+    padding-right: 35px
+    box-sizing: border-box
+    &__textMenu
+        padding-right: 10px
+        padding-left: 10px
+        box-sizing: border-box
+        line-height: 28px
+        border-right: 2px solid #dfdfdf
+        transition: color 1s
+        &:nth-child(3n)
+            border: 0
+        &:nth-child(3n+1)
+            padding-left: 0
+        &:hover
+            color: $colorPinkLight
+.productSiteRightMenuSize
+    margin-top: 25px
+    display: flex
+    flex-wrap: wrap
+    &__textMenuUppercase
+        padding-right: 6px
+        margin-bottom: 13px
+        font-weight: 400
+        display: block
+        width: 50px
+
+input[type=checkbox] 
+    display: none
+
+.pseudocheckbox::before    
+    content: "\00A0"
+    display: inline-block
+    box-sizing: border-box
+    width: 16px
+    height: 16px
+    background-color: white
+    border: 1px solid #ebebeb
+    margin-right: 6px    
+    text-align: center
+    +fontSite($colorFontGray, 11px, 700)
+
+input[type=checkbox]:checked + .pseudocheckbox::before 
+    content: "\2713"
+
+.productSiteRightMenuRange
+    margin-top: 25px
+    display: flex
+    flex-direction: column
+    
+#slider-range 
+    margin-bottom: 21px 
+.ui-state-default, .ui-widget-content .ui-state-default
+    background-color: $colorPinkLight
+    background: $colorPinkLight
+    border: 0
+    outline: none
+.ui-slider-handle 
+    border-radius: 10px
+    background-color: $colorPinkLight
+    border: 0 
+.ui-widget.ui-widget-content
+    border: 0
+    background-color: #f3f3f3
+    background: #f3f3f3
+.ui-slider-horizontal .ui-slider-handle
+    top: -6px
+.ui-widget-header 
+    background-color: $colorPinkLight
+.ui-slider-horizontal
+    height: 6px
+.ui-slider .ui-slider-handle
+    z-index: 0
+.ui-slider .ui-slider-range
+    z-index: 0
+
+.MenuRangeAmount 
+    display: flex
+#amountFor, #amountTo
+    +fontSite($colorFontGray, 14px, 400)
+    border: 0
+    width: 50%    
+#amountTo
+    text-align: right
+
+.productSiteRighSortBy
+    display: flex
+    align-items: center
+    width: 100%
+    height: 50px
+    background-color:  #f3f3f3
+    margin-bottom: 48px
+    padding-left: 9px
+    box-sizing: border-box
+.productSiteRighSortByBlock
+    display: flex
+    margin-right: 10px
+    &__textMenu
+        border: 1px solid #ebebeb
+        padding: 6px 13px
+        box-sizing: border-box
+        background-color: #ffffff
+        
+.productSiteRight-bottom
+    +flexSite(row, space-between, flex-start)
+    flex-wrap: wrap
+    &__block
+        transition: all 1s     
+        position: relative
+        margin-bottom: 35px
+        &:hover 
+            box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
+        &:hover .add-to-cart-btn 
+            display: block
+            
+.page-navigation 
+    a 
+        margin: 0 2px
+        display: inline-block
+        padding: 3px 5px
+        color: #ffffff
+        background-color: #70b7ec
+        border-radius: 5px
+        text-decoration: none
+        font-weight: bold
+.page-navigation
+    a[data-selected] 
+        background-color: #3d9be0
+
+@import "footer"

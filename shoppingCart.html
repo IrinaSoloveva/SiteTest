@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
+    <link href="packages/icons/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    
+    <script src="js/jsMenu.js"></script>
+    <script src="js/jsCookie.js"></script>
+    <script src="js/jsValidate.js"></script>
+    <script src="js/jsGetSubscribeComment.js"></script>
+    <script src="js/jsGetCart.js"></script>
+    <script src="js/jsAuthorization.js"></script>
+    <script src="js/jsShoppingCart.js"></script>
+    
+    <link href="style/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container tac header-flex">
+            <div class="headerLeft tac">
+                <a href="index.html" class="logo">bren<span>d</span></a>
+                <div id="browseMenu"></div>
+                <input type="search" placeholder="Search for Item...">
+                <button class="searchBtn" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="headerRight tac">
+                <div class="basketContainer">
+                    <ul class="basket">
+                        <li id="megaBasket"><a href="shoppingCart.html" class="basketBtn"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="btnAccountContainer"></div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div id="mainNav" class="container nav"></div>
+    </nav>
+
+    <div class="breadcrumbs">
+        <div class="container breadcrumbsInside tac">
+            <section>
+                <a href="#">New Arrivals</a>
+            </section>
+            <ul class="breadcrumbs-Li">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">New Arrivals</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="productTable" class="productTable">
+        <div class="container">
+            <div class="productTableUnit-titel">
+                <div class="productTableLeft">
+                    <div class="productTableLeft-flex">
+                        <span>Product Details</span>
+                    </div>
+                </div>
+                <div class="productTableRight">
+                    <div class="productTableRight-flex-titel">
+                        <span>unite Price</span>
+                    </div>
+                    <div class="productTableRight-flex-titel">
+                        <span>Quantity</span>
+                    </div>
+                    <div class="productTableRight-flex-titel">
+                        <span>shipping</span>
+                    </div>
+                    <div class="productTableRight-flex-titel">
+                        <span>Subtotal</span>
+                    </div>
+                    <div class="productTableRight-flex-titel">
+                        <span>ACTION</span>
+                    </div>
+                </div>
+            </div>
+            <div id="productTableUnitContainer"></div>
+        </div>
+    </div>
+
+    <div class="clear-continue-cart">
+        <div class="container clear-continue-cartInside">
+            <button>cLEAR SHOPPING CART</button>
+            <a href="#">cONTINUE sHOPPING</a>
+        </div>
+    </div>
+
+    <div class="adress-coupon-butCheck">
+        <div class="container adress-coupon-butCheckInside">
+            <div class="adress-coupon-butCheckInside-form">
+                <div class="adress-coupon-butCheckInside-text">
+                    <span>Shipping Adress</span>
+                </div>
+                <select name="country">
+	                <option>Bangladesh</option>
+	                <option>Russia</option>
+                </select>
+                <input id="state" placeholder="State">
+                <input id="postcode" placeholder="Postcode / Zip">
+                <button>get a quote</button>
+            </div>
+            <div class="adress-coupon-butCheckInside-form">
+                <div class="adress-coupon-butCheckInside-text">
+                    <span>coupon  discount</span>
+                    <p>Enter your coupon code if you have one</p>
+                </div>
+                <input id="coupon" placeholder="State">
+                <button>Apply coupon</button>
+            </div>
+            <div class="adress-coupon-butCheckInside-formBUY">
+                <div class="adress-coupon-butCheckInside-textBUY">
+                    <div class="adress-coupon-butCheckInside-textFlex subPrice">
+                        <p>Sub total</p>
+                        <p id="subTotalCart"></p>
+                    </div>
+                    <div class="adress-coupon-butCheckInside-textFlex grandPrice">
+                        <p>GRAND TOTAL<span id="grandTotalCart"></span></p>
+                    </div>
+                </div>
+                <a href="#">proceed to checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="subscribe">
+        <div class="container subscribeInside">
+            <div class="subscribeHalfLeft"></div>
+            <div class="subscribeHalfRight">
+                <div class="subscribeHalfRight-text">
+                    <h1>Subscribe</h1>
+                    <h2>FOR OUR NEWLETTER AND PROMOTION</h2>
+                </div>
+                <div class="subscribeHalfRight-form">
+                    <input type="email" placeholder="Enter Your Email">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footerInf">
+        <div class="container footerInfIncide">
+            <div class="footerInfIncide-brand">
+                <a href="#" class="logo">bren<span>d</span></a>
+                <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p>
+                <p>Efficiently plagiarize 24/365 action items and focusedinfomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+            </div>
+            <div class="footerInfIncide-blok">
+                <h1>COMPANY</h1>
+                <div class="footerIncide-blok-flex">
+                    <a href="index.html">Home</a>
+                    <a href="#">Shop</a>
+                    <a href="#">About</a>
+                    <a href="#">How It Works</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <div class="footerInfIncide-blok">
+                <h1>INFORMATION</h1>
+                <div class="footerIncide-blok-flex">
+                    <a href="#">Tearms & Condition</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">How to Buy</a>
+                    <a href="#">How to Sell</a>
+                    <a href="#">Promotion</a>
+                </div>
+            </div>
+            <div class="footerInfIncide-blok">
+                <h1>SHOP CATEGORY</h1>
+                <div class="footerIncide-blok-flex">
+                    <a href="#">Men</a>
+                    <a href="#">Women</a>
+                    <a href="#">Child</a>
+                    <a href="#">Apparel</a>
+                    <a href="#">Brows All</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="footerSocial">
+        <div class="container footerSocialIncide">
+            <p>&copy; 2017 Brand All Rights Reserved.</p>
+            <div class="socialIcons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-google-plus-square"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

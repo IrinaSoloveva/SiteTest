@@ -1,0 +1,353 @@
+{
+  "validate": [
+    {
+      "id": "nameUser",
+      "pattern": "^[a-zA-Zа-яА-ЯёЁ]+$",
+      "errorMessage": "Неверный формат. Допустимы только буквы"
+    },
+    {
+      "id": "cityUser",
+      "pattern": "^[a-zA-Zа-яА-ЯёЁ]+$",
+      "errorMessage": "Неверный формат. Допустимы только буквы"
+    },
+    {
+      "id": "email",
+      "pattern": "^[a-z\\.\\-]+@[a-z]+\\.[a-z]+$",
+      "errorMessage": "Неверный формат. Допустимы строчные буквы и символы '. , -'"
+    },
+    {
+      "id": "phone",
+      "pattern": "^\\+7\\(\\d{3}\\)\\d{3}\\-\\d{4}$",
+      "errorMessage": "Неверный формат. Образец: +7(000)000-0000"
+    },
+    {
+      "id": "userPassword",
+      "pattern": "^\\w{7,}$",
+      "errorMessage": "Неверный формат. Не менее 7 символов."
+    },
+    {
+      "id": "firstName",
+      "pattern": "^[\\w\\-]{3,20}$",
+      "errorMessage": "Неверный формат. От 3 до 20 символов."
+    },
+    {
+      "id": "lastName",
+      "pattern": "^[\\w\\-]{3,20}$",
+      "errorMessage": "Неверный формат. От 3 до 20 символов."
+    },
+    {
+      "id": "birthday",
+      "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$",
+      "errorMessage": "Неверный формат. Образец: 01.01.2001"
+    },
+    {
+      "id": "city",
+      "pattern": "^[\\w\\-]{3,20}$",
+      "errorMessage": "Неверный формат. От 3 до 20 символов."
+    }
+  ],
+  "city": [
+    {
+      "name": "Москва"
+    },
+    {
+      "name": "Мурманск"
+    },
+    {
+      "name": "Краснодар"
+    },
+    {
+      "name": "Красноярск"
+    },
+    {
+      "name": "Курск"
+    }
+  ],
+  "menuGreat": [
+    {
+      "id": "1",
+      "content": "home",
+      "href": "index.html"
+    },
+    {
+      "id": "2",
+      "content": "men",
+      "href": "index.html"
+    },
+    {
+      "id": "3",
+      "content": "women",
+      "href": "index.html"
+    },
+    {
+      "id": "4",
+      "content": "kids",
+      "href": "index.html"
+    },
+    {
+      "id": "5",
+      "content": "accoseriese",
+      "href": "index.html"
+    },
+    {
+      "id": "6",
+      "content": "featured",
+      "href": "index.html"
+    },
+    {
+      "id": "7",
+      "content": "hot deals",
+      "href": "index.html"
+    }
+  ],
+  "menuInserted": [
+    {
+      "id": "1",
+      "idMenuGreat": "1",
+      "content": "Women",
+      "href": ""
+    },
+    {
+      "id": "2",
+      "idMenuGreat": "1",
+      "content": "Dresses",
+      "href": "#"
+    },
+    {
+      "id": "3",
+      "idMenuGreat": "1",
+      "content": "Tops",
+      "href": "#"
+    },
+    {
+      "id": "4",
+      "idMenuGreat": "1",
+      "content": "Sweaters/Knits",
+      "href": "#"
+    },
+    {
+      "id": "5",
+      "idMenuGreat": "1",
+      "content": "Women",
+      "href": ""
+    },
+    {
+      "id": "6",
+      "idMenuGreat": "1",
+      "content": "Dresses",
+      "href": "#"
+    },
+    {
+      "id": "7",
+      "idMenuGreat": "1",
+      "content": "Tops",
+      "href": "#"
+    },
+    {
+      "id": "8",
+      "idMenuGreat": "1",
+      "content": "Sweaters/Knits",
+      "href": "#"
+    },
+    {
+      "id": "9",
+      "idMenuGreat": "1",
+      "content": "Women",
+      "href": ""
+    },
+    {
+      "id": "10",
+      "idMenuGreat": "1",
+      "content": "Dresses",
+      "href": "#"
+    },
+    {
+      "id": "11",
+      "idMenuGreat": "1",
+      "content": "Tops",
+      "href": "#"
+    },
+    {
+      "id": "12",
+      "idMenuGreat": "1",
+      "content": "Sweaters/Knits",
+      "href": "#"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "email": "123@mail.ru",
+      "userPassword": "1234567",
+      "cookie": "",
+      "firstName": "Иван",
+      "lastName": "Иванов",
+      "birthday": "12.12.2000",
+      "city": "Красноярск",
+      "phone": "+7(918)000-0000",
+      "img": "img/Subscribe/userFoto.png"
+    },
+    {
+      "email": "chty@mnmn.ru",
+      "userPassword": "cvcvcvcvcvcv",
+      "cookie": "gdxnfdzq",
+      "firstName": "Ann",
+      "lastName": "Ann",
+      "birthday": "03.10.2018",
+      "city": "Praha",
+      "phone": "+7(000)000-0000",
+      "img": "img/Subscribe/userFoto.png",
+      "id": "k2_aRny"
+    },
+    {
+      "email": "dfdfdf@vcvc.ru",
+      "userPassword": "bhvhbvbv",
+      "cookie": "ixrwne7n",
+      "firstName": "Peter",
+      "lastName": "Peter",
+      "birthday": "03.10.2018",
+      "city": "Moskow",
+      "phone": "",
+      "img": "img/Subscribe/userFoto.png",
+      "id": "QKTZGAm"
+    }
+  ],
+  "goods": [
+    {
+      "id": "1",
+      "name": "Повседневное платье",
+      "article": "0124",
+      "categoryOne": "Женщины",
+      "categoryTwo": "Одежда",
+      "categoryThree": "Платья",
+      "brand": "H&M",
+      "Color": "#fff",
+      "ColorName": "white",
+      "size": "S",
+      "srcMin": "img/product/min/0124.jpg",
+      "srcMedium": "img/product/medium/0124.jpg",
+      "srcMax": "img/product/max/0124.jpg",
+      "price": "300",
+      "shipping": "free"
+    },
+    {
+      "id": "2",
+      "name": "Повседневное платье",
+      "article": "0125",
+      "categoryOne": "Женщины",
+      "categoryTwo": "Одежда",
+      "categoryThree": "Платья",
+      "brand": "H&M",
+      "Color": "#fff",
+      "ColorName": "white",
+      "size": "S",
+      "srcMin": "img/product/min/0124.jpg",
+      "srcMedium": "img/product/medium/0124.jpg",
+      "srcMax": "img/product/max/0124.jpg",
+      "price": "300",
+      "shipping": "free"
+    },
+    {
+      "id": "3",
+      "name": "Повседневное платье",
+      "article": "0126",
+      "categoryOne": "Женщины",
+      "categoryTwo": "Одежда",
+      "categoryThree": "Платья",
+      "brand": "H&M",
+      "Color": "#fff",
+      "ColorName": "white",
+      "size": "S",
+      "srcMin": "img/product/min/0124.jpg",
+      "srcMedium": "img/product/medium/0124.jpg",
+      "srcMax": "img/product/max/0124.jpg",
+      "price": "300",
+      "shipping": "free"
+    },
+    {
+      "id": "4",
+      "name": "Повседневное платье",
+      "article": "0127",
+      "categoryOne": "Женщины",
+      "categoryTwo": "Одежда",
+      "categoryThree": "Платья",
+      "brand": "H&M",
+      "Color": "#fff",
+      "ColorName": "white",
+      "size": "S",
+      "srcMin": "img/product/min/0124.jpg",
+      "srcMedium": "img/product/medium/0124.jpg",
+      "srcMax": "img/product/max/0124.jpg",
+      "price": "300",
+      "shipping": "free"
+    },
+    {
+      "id": "5",
+      "name": "Повседневное платье",
+      "article": "0128",
+      "categoryOne": "Женщины",
+      "categoryTwo": "Одежда",
+      "categoryThree": "Платья",
+      "brand": "H&M",
+      "Color": "#fff",
+      "ColorName": "white",
+      "size": "S",
+      "srcMin": "img/product/min/0124.jpg",
+      "srcMedium": "img/product/medium/0124.jpg",
+      "srcMax": "img/product/max/0124.jpg",
+      "price": "300",
+      "shipping": "free"
+    },
+    {
+      "id": "6",
+      "name": "Повседневное платье",
+      "article": "0129",
+      "categoryOne": "Женщины",
+      "categoryTwo": "Одежда",
+      "categoryThree": "Платья",
+      "brand": "H&M",
+      "Color": "#fff",
+      "ColorName": "white",
+      "size": "S",
+      "srcMin": "img/product/min/0125.jpg",
+      "srcMedium": "img/product/medium/0125.jpg",
+      "srcMax": "img/product/max/0125.jpg",
+      "price": "300",
+      "shipping": "free"
+    }
+  ],
+  "basket": [
+    {
+      "id": "1",
+      "article": "0124",
+      "quantity": "1"
+    },
+    {
+      "id": "2",
+      "article": "0125",
+      "quantity": "2"
+    },
+    {
+      "id": "3",
+      "article": "0126",
+      "quantity": "1"
+    }
+  ],
+  "feedback": [
+    {
+      "id": "1",
+      "userId": "1",
+      "text": "Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium"
+    },
+    {
+      "id": "2",
+      "userId": "k2_aRny",
+      "text": "That is all right"
+    },
+    {
+      "id": "3",
+      "userId": "QKTZGAm",
+      "text": "Спасибо! Рекомендую вас друзьям!"
+    }
+  ]
+}

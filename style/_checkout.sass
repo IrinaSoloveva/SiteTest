@@ -1,0 +1,77 @@
+@import "header"
+
+.checkoutSite
+    margin-bottom: 90px
+.checkUnit
+    border-bottom: 0.2px solid #eaeaea
+.checkBlock
+    display: flex
+    &__textMenuUppercaseCheck
+        display: block
+        line-height: 100px
+    i
+        display: flex
+        align-items: center
+        margin-left: 20px
+        font-size: 32px
+        color: #ef5b70
+.checkNone 
+    display: flex
+    margin-bottom: 50px
+.userInformation
+    display: flex
+.checkNoneLeft
+    display: flex
+    flex-direction: column
+    padding-left: 35px
+    margin-right: 290px
+.checkNoneLeft-block
+    margin-bottom: 13%
+    &:last-child
+        margin-bottom: 0
+    &__textMenuCheck
+        margin-top: 15px
+    &__textMenuUppercaseCheck
+        margin-left: 19px
+.checkNoneLeftBtn
+    display: block
+    border: 1px solid #eaeaea
+    box-sizing: border-box
+    width: 180px
+    height: 50px
+    +flexSite(row, center, center)
+    +fontSite(#4a4a4a, 14, 700)
+    text-transform: uppercase
+    transition: background-color 1s
+    &:hover
+        background-color: $colorPinkLight
+        border: 0
+        color: #fff
+.checkNoneRight
+    display: flex
+    flex-direction: column
+.checkNoneRight-block
+    margin-bottom: 6%
+    &__textMenuUppercaseCheck
+        margin-bottom: 8px
+        display: block
+    &__textMenu
+        color: #222222
+        transition: color 1s
+        &:hover
+            color: $colorPinkLight
+    em
+        +fontSite(#ff0d0d, 17, 400)
+        margin-left: 5px
+.checkNoneRight-blockFlex
+    +flexSite(row, flex-start, center)
+    &__checkNoneLeftBtn
+        margin-right: 32px
+.inpCheckNoneRight
+    border: 1px solid #eaeaea
+    padding-left: 15px
+    box-sizing: border-box
+    width: 390px
+    height: 45px
+        
+@import "footer"

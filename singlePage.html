@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Single Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link href="packages/icons/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    
+    <script src="js/jsCarousel.js"></script>
+    <script src="js/jsMenu.js"></script>
+    <script src="js/jsCookie.js"></script>
+    <script src="js/jsValidate.js"></script>
+    <script src="js/jsSelectMenu.js"></script>
+    <script src="js/jsGetSubscribeComment.js"></script>
+    <script src="js/jsAuthorization.js"></script>
+    <script src="js/jsSinglePage.js"></script>
+    
+    <link href="style/style.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <header>
+        <div class="container tac header-flex">
+            <div class="headerLeft tac">
+                <a href="index.html" class="logo">bren<span>d</span></a>
+                <div id="browseMenu"></div>
+                <input type="search" placeholder="Search for Item...">
+                <button class="searchBtn" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="headerRight tac">
+                <div class="basketContainer">
+                    <ul class="basket">
+                        <li id="megaBasket"><a href="shoppingCart.html" class="basketBtn"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="btnAccountContainer"></div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div id="mainNav" class="container nav"></div>
+    </nav>
+    
+    <div class="breadcrumbs">
+        <div class="container breadcrumbsInside tac">
+            <section>
+                <a href="#">New Arrivals</a>
+            </section>
+            <ul class="breadcrumbs-Li">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">New Arrivals</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slideSinglePage">
+        <div class="container slideSinglePageIncide">
+            <img src="img/SinglePage/slideImg.jpg">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="productDescription">
+            <div class="productDescriptionTop">
+                <h3>WOMEN COLLECTION</h3>
+                <h2>Moschino Cheap And Chic</h2>
+                <p>Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
+                <div class="optionsProduct">
+                    <h3>MATERIAL: <span>COTTON</span></h3>
+                    <h3>DESIGNER: <span>BINBURHAN</span></h3>
+                </div>
+                <h1>$561</h1>
+            </div>
+            <div class="productDescriptionBottom">
+                <div class="productDescriptionBottom-form">
+                    <article>
+                       <span class="textMenuUppercase productDescriptionBottom-form__textMenuUppercase textMenuUppercase_darkGrey">CHOOSE COLOR</span>
+                        <ul class="mySelectContainer">
+                            <li><a href="#" onclick="return false" class="productMenuSinglePageBtn mySelectTitle"></a>
+                                <div class="arrow"></div>
+                                <div class="mega mySelectContainer__mega">
+                                    <div class="mega-flex mySelectContainer__mega-flex mega-flex_light">
+                                        <ul class="mySelect">
+                                            <li><a href="#" onclick="return false"><div class="mySelectColor"></div>black</a></li>
+                                            <li><a href="#" onclick="return false"><div class="mySelectColor"></div>blue</a></li>
+                                            <li><a href="#" onclick="return false"><div class="mySelectColor"></div>pink</a></li>
+                                            <li><a href="#" onclick="return false"><div class="mySelectColor"></div>white</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                    <article>
+                        <span class="textMenuUppercase productDescriptionBottom-form__textMenuUppercase textMenuUppercase_darkGrey">CHOOSE SIZE</span>
+                        <ul class="mySelectContainer">
+                            <li><a href="#" onclick="return false" class="productMenuSinglePageBtn mySelectTitle"></a>
+                                <div class="arrow"></div>
+                                <div class="mega mySelectContainer__mega">
+                                    <div class="mega-flex mySelectContainer__mega-flex mega-flex_light">
+                                        <ul class="mySelect">
+                                            <li><a href="#" onclick="return false">XXS</a></li>
+                                            <li><a href="#" onclick="return false">XS</a></li>
+                                            <li><a href="#" onclick="return false">S</a></li>
+                                            <li><a href="#" onclick="return false">M</a></li>
+                                            <li><a href="#" onclick="return false">L</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                    <article>
+                        <span class="textMenuUppercase productDescriptionBottom-form__textMenuUppercase textMenuUppercase_darkGrey">CHOOSE QUANTITY</span>
+                        <input class="productMenuSinglePageBtn" type="number">
+                    </article>
+                </div>
+                <button>
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Add to Cart</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="likeAlso">you may like also</div>
+
+    <div class="productsAll">
+        <div id="popularProducts" class="container">
+            <div class="productUnit">
+                <a href="#" class="product">
+                    <img src="img/product/Layer%202.jpg">
+                    <div class="productInf">
+                        <p class="productName tac">Mango  People  T-shirt</p>
+                        <span class="productPrice">$52.00</span>
+                    </div>
+                </a>
+                <div class="add-to-cart">
+                    <a href="#" class="add-to-cart-btn tac">
+                        <img src="img/product/copyBasket.png">
+                        <span>Add to Cart</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="productUnit">
+                <a href="#" class="product">
+                    <img src="img/product/Layer%203.jpg">
+                    <div class="productInf">
+                        <p class="productName tac">Mango  People  T-shirt</p>
+                        <span class="productPrice">$52.00</span>
+                    </div>
+                </a>
+                <div class="add-to-cart">
+                    <a href="#" class="add-to-cart-btn tac">
+                        <img src="img/product/copyBasket.png">
+                        <span>Add to Cart</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="productUnit">
+                <a href="#" class="product">
+                    <img src="img/product/Layer%205.jpg">
+                    <div class="productInf">
+                        <p class="productName tac">Mango  People  T-shirt</p>
+                        <span class="productPrice">$52.00</span>
+                    </div>
+                </a>
+                <div class="add-to-cart">
+                    <a href="#" class="add-to-cart-btn tac">
+                        <img src="img/product/copyBasket.png">
+                        <span>Add to Cart</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="productUnit">
+                <a href="#" class="product">
+                    <img src="img/product/Layer%206.jpg">
+                    <div class="productInf">
+                        <p class="productName tac">Mango  People  T-shirt</p>
+                        <span class="productPrice">$52.00</span>
+                    </div>
+                </a>
+                <div class="add-to-cart">
+                    <a href="#" class="add-to-cart-btn tac">
+                        <img src="img/product/copyBasket.png">
+                        <span>Add to Cart</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="productUnit">
+                <a href="#" class="product">
+                    <img src="img/product/Layer%206.jpg">
+                    <div class="productInf">
+                        <p class="productName tac">Mango  People  T-shirt</p>
+                        <span class="productPrice">$52.00</span>
+                    </div>
+                </a>
+                <div class="add-to-cart">
+                    <a href="#" class="add-to-cart-btn tac">
+                        <img src="img/product/copyBasket.png">
+                        <span>Add to Cart</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="productUnit">
+                <a href="#" class="product">
+                    <img src="img/product/Layer%206.jpg">
+                    <div class="productInf">
+                        <p class="productName tac">Mango  People  T-shirt</p>
+                        <span class="productPrice">$52.00</span>
+                    </div>
+                </a>
+                <div class="add-to-cart">
+                    <a href="#" class="add-to-cart-btn tac">
+                        <img src="img/product/copyBasket.png">
+                        <span>Add to Cart</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subscribe">
+        <div class="container subscribeInside">
+            <div class="subscribeHalfLeft"></div>
+            <div class="subscribeHalfRight">
+                <div class="subscribeHalfRight-text">
+                    <h1>Subscribe</h1>
+                    <h2>FOR OUR NEWLETTER AND PROMOTION</h2>
+                </div>
+                <div class="subscribeHalfRight-form">
+                    <input type="email" placeholder="Enter Your Email">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footerInf">
+        <div class="container footerInfIncide">
+            <div class="footerInfIncide-brand">
+                <a href="#" class="logo">bren<span>d</span></a>
+                <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p>
+                <p>Efficiently plagiarize 24/365 action items and focusedinfomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+            </div>
+            <div class="footerInfIncide-blok">
+                <h1>COMPANY</h1>
+                <div class="footerIncide-blok-flex">
+                    <a href="index.html">Home</a>
+                    <a href="#">Shop</a>
+                    <a href="#">About</a>
+                    <a href="#">How It Works</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <div class="footerInfIncide-blok">
+                <h1>INFORMATION</h1>
+                <div class="footerIncide-blok-flex">
+                    <a href="#">Tearms & Condition</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">How to Buy</a>
+                    <a href="#">How to Sell</a>
+                    <a href="#">Promotion</a>
+                </div>
+            </div>
+            <div class="footerInfIncide-blok">
+                <h1>SHOP CATEGORY</h1>
+                <div class="footerIncide-blok-flex">
+                    <a href="#">Men</a>
+                    <a href="#">Women</a>
+                    <a href="#">Child</a>
+                    <a href="#">Apparel</a>
+                    <a href="#">Brows All</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="footerSocial">
+        <div class="container footerSocialIncide">
+            <p>&copy; 2017 Brand All Rights Reserved.</p>
+            <div class="socialIcons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-google-plus-square"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jsSelectMenu.js"></script>
+</body>
+
+</html>

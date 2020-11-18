@@ -1,0 +1,56 @@
+$widthContainer: 1140px
+$colorFontGray: #6f6e6e
+$colorPink: #ef5b70
+$colorPinkLight: #f16d7f
+@import "mixins"
+* 
+    margin: 0
+    padding: 0
+body 
+    font-family: 'Lato', sans-serif
+    a 
+        text-decoration: none
+        &:hover 
+            text-decoration: none
+    ul 
+        list-style-type: none      
+    input, button, select, option, summary
+        outline: none
+.tac 
+    align-items: center
+.container 
+    width: $widthContainer
+    margin: 0 auto
+.textMenu
+    +fontSite($colorFontGray, 14px, 400)
+    &_pink
+        color: #f16d7f 
+.textMenuUppercase
+    +fontSite($colorFontGray, 14px, 700)
+    text-transform: uppercase
+    &_pink
+        color: #f16d7f 
+    &_darkGrey
+        color: #2f2f2f
+.textMenuCheck
+    +fontSite(#b3b2b2, 13px, 400)
+    &_red
+        color: #ff0d0d 
+.textMenuUppercaseCheck
+    +fontSite(#222222, 13px, 400)
+    text-transform: uppercase
+    &_small
+        font-size: 12px
+    &_big
+        font-size: 16px
+        font-weight: 700
+.errorMessage
+    +fontSite(#ff0d0d, 13px, 400)
+    font-style: italic
+    margin-top: 5px
+   
+@import "index"
+@import "singlePage"
+@import "shoppingCart"
+@import "product"
+@import "checkout"

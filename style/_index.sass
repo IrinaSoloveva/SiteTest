@@ -1,0 +1,144 @@
+@import "header"
+
+
+.theBrand 
+    background: url(../img/brand-img.jpg)
+    background-size: cover
+    height: 665px - 51px
+    display: flex
+    margin-bottom: 98px
+.text-brand 
+    border-left: 12px solid #f16d7f
+    padding-left: 12px
+    h2 
+        color: #222222
+        font-size: 60px
+        font-weight: 900
+        line-height: 45px
+        margin-bottom: 12px
+    h3 
+        font-family: Lato
+        font-size: 40px
+        font-weight: 900
+        line-height: 31px
+    span 
+        color: #f16d7f
+.category 
+    display: flex
+    justify-content: space-between
+    margin-bottom: 100px - 20px
+    img
+        margin-bottom: 20px   
+.categoryLeft 
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin-right: 20px
+.categoryPos 
+    position: relative
+.categoryTitel 
+    position: absolute
+    top: 26px
+    background-color: white
+    padding: 16px 19px
+    box-sizing: border-box
+    p 
+        color: #222222
+        font-size: 18px
+        font-weight: 900
+        text-transform: uppercase
+    span 
+        color: #f16d7f
+        font-size: 30px
+        font-weight: 900
+        text-transform: uppercase
+.fetured-items 
+    display: flex
+    justify-content: center
+    margin-top: 80px
+    p 
+        color: #222222
+        font-size: 30px
+        font-weight: 700
+        text-align: center
+    span 
+        color: #9f9f9f
+        font-size: 14px
+        font-weight: 400
+.productsAll 
+    margin-top: 60px
+    margin-bottom: 20px
+    .container
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+.productUnit 
+    position: relative
+    margin-bottom: 39px
+    &:hover 
+        box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
+    &:hover .add-to-cart-btn 
+        display: flex
+.product 
+    display: flex
+    flex-direction: column   
+    img
+        display: block
+        transition: filter 1s
+    &:hover img 
+        filter: brightness(50%)
+.productInf 
+    padding: 19px 15px
+.productName 
+    color: #222222
+    font-size: 13px
+    font-weight: 400
+    text-transform: uppercase
+    margin-bottom: 17px
+.productPrice 
+    color: #f16d7f
+    font-size: 16px
+    font-weight: 700
+.add-to-cart 
+    display: flex
+    justify-content: center
+.add-to-cart-btn 
+    position: absolute
+    top: 98px
+    padding: 10px
+    display: none
+    border: 1px solid
+    border-color: #ffffff
+    box-sizing: border-box
+    background-color: rgba(255, 255, 255, 0)
+    transition: background-color 1s
+    &:hover 
+        background-color: #f16d7f
+    span 
+        color: #ffffff
+        font-size: 13px
+        font-weight: 700
+        margin-left: 8px
+.browse-all
+    display: flex
+    justify-content: center
+.browse-all-product 
+    width: 212px
+    height: 48px
+    background-color: $colorFontGray
+    +flexSite(row, center, center)
+    +fontSite(#4a4a4a, 14, 700)
+    text-transform: capitalize
+    transition: background-color 1s
+    &:hover
+        background-color: $colorPinkLight
+        border: 0
+        color: #fff
+    span 
+        color: #ffffff
+        font-size: 16px
+        font-weight: 700
+        text-transform: capitalize
+        margin-right: 9px
+
+@import "footer"

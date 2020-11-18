@@ -1,0 +1,212 @@
+.feature 
+    background-color: #222224
+    margin-top: 113px
+    display: flex
+    justify-content: space-between
+    flex: 1  
+
+.featureBanner 
+    position: relative
+.featureBannerTxt 
+    position: absolute
+    left: 39px
+    top: 146px
+    h1 
+        color: #ffffff
+        font-size: 53.62px
+        font-weight: 700
+        span 
+            color: #f16d7f
+            font-size: 53.62px
+            font-weight: 700
+    h2 
+        color: #ffffff
+        font-size: 32.17px
+        font-weight: 700
+.featureInf
+    flex: 1
+    padding: 40px
+    box-sizing: border-box
+.featureIndex
+    margin-bottom: 97px
+    &__featureInf
+        +flexSite(column, space-between, center)
+    &__featureInfBlok
+        +flexSite(row, space-around, flex-start)
+        section 
+            margin-left: 33px
+.featureProduct
+    &__featureInf
+        +flexSite(row, space-between, center)
+    &__featureInfBlok
+        +flexSite(column, center, center)
+        section
+            +flexSite(column, center, center)
+        p
+            text-align: center
+        h1
+            margin-top: 32px
+.featureInfBlok  
+    h1 
+        margin-bottom: 17px
+        color: #fbfbfb
+        font-size: 20px
+        font-weight: 700
+    p 
+        color: #fbfbfb
+        font-size: 14px
+        font-weight: 300
+        line-height: 24px
+.subscribe 
+    height: 438px
+    background: url(../img/Subscribe/Subscribe.jpg)
+    background-size: cover
+    margin-bottom: 123px
+.subscribeInside 
+    height: inherit
+    display: flex
+.subscribeHalfLeft
+    height: inherit
+    width: 50%
+    border-right: 2px solid #ececec
+    box-sizing: border-box
+.subscribeComment
+    display: flex
+    padding-top: 111px
+    box-sizing: border-box
+    img
+        width: 83px
+        height: 83px
+        margin-right: 28px
+.subscribeCommentText 
+    max-width: 390px
+    .subscribeCommentUserText 
+        color: rgba(34, 34, 36, 0.67)
+        font-size: 16px
+        font-style: italic
+        line-height: 26px
+    .subscribeCommentUserName 
+        color: #f16d7f
+        font-size: 16px
+        font-weight: 700
+        line-height: 26px
+    .subscribeCommentUserCountry 
+        color: #222224
+        font-size: 12px
+        font-weight: 300
+        line-height: 14px
+.subscribeHalfRight 
+    height: inherit
+    width: 50%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+.subscribeHalfRight-text 
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-transform: uppercase
+    h1 
+        color: rgba(34, 34, 36, 0.67)
+        font-size: 24px
+        font-weight: 400
+        padding-bottom: 10px
+    h2 
+        color: rgba(34, 34, 36, 0.67)
+        font-size: 14px
+        font-weight: 400
+        padding-bottom: 35px
+
+.subscribeHalfRight-form 
+    input, button 
+        height: 46px
+        border-radius: 30px
+        border: 0
+    input 
+        background-color: #e1e1e1
+        width: 334px + 104px
+        padding-left: 28px
+        box-sizing: border-box
+    button 
+        background-color: $colorFontGray
+        color: #fff
+        width: 104px
+        margin-left: -104px
+        border-bottom-left-radius: 0
+        border-top-left-radius: 0
+        transition: background-color 1s
+        &:hover
+            background-color: $colorPinkLight  
+.footerInf 
+    margin-bottom: 89px
+.footerInfIncide 
+    display: flex
+    justify-content: space-between
+.footerInfIncide-brand 
+    a 
+        margin-bottom: 29px
+    p 
+        max-width: 427px
+        color: #898989
+        font-size: 14px
+        font-weight: 300
+        line-height: 24px
+        margin-bottom: 35px
+.footerInfIncide-blok 
+    margin-top: 13px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    h1 
+        margin-bottom: 41px
+        color: #f16d7f
+        font-size: 18px
+        font-weight: 700
+    a 
+        display: flex
+        flex: 1
+        text-decoration: none
+        color: #898989
+        font-size: 16px
+        font-weight: 400
+        transition: color 1s
+        &:hover
+            color: #f16d7f
+.footerIncide-blok-flex 
+    display: flex
+    flex: 1
+    flex-direction: column
+    justify-content: space-between
+.footerSocial 
+    height: 79px
+    background-color: #e6e6e6
+.footerSocialIncide 
+    display: flex
+    height: inherit
+    align-items: center
+    justify-content: space-between
+    p 
+        font-family: Lato
+        color: #7a7a7a
+        font-size: 16px
+        font-weight: 400
+        text-transform: capitalize
+.socialIcons 
+    display: flex
+    a 
+        display: block
+        width: 32px
+        height: 32px
+        background-color: #ffffff
+        text-align: center
+        line-height: 32px
+        color: #b2b2b2
+        margin-right: 8px
+        transition: all 1s
+        &:last-child 
+            margin-right: 0
+        &:hover 
+            background-color: #f16d7f
+            color: #fff
